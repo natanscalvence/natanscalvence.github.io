@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html {
+	background-color: #fff;
+	color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+	width: 1200px;
+	margin: auto;
+	max-width: 100%;
+	display: flex;
+}
+
+li{
+    text-decoration: none;
+}
+
+.avatar{
+    margin-top: 4px;
+    margin-left: 50px;
+}
+
+.sidebar-holder {
+	display: inline-block;
+	padding: 1em;
+}
+.sidebar {
+    font-family: 'Nanum Gothic', sans-serif;
+	background: #fff;
+	width: 290px;
+	border: .1em solid #c8ccd1;
+}
+
+.aligntext {
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 1em;
+    margin-top: -60px;
+    margin-left: 80px;
+}
+
+main img{
+    height: 70px;
+}
+
+
+.sidebar h1 {
+	padding: 0em .4em;
+	text-align: center;
+}
+
+.sidebar small{
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 49%;
+}
+.topnav ul {
+	list-style: none;
+	padding: 0;
+}
+.topnav ul li {
+	border-top: .1em solid #ffe2f7;
+	padding: .2em .4em;
+}
+@media only screen and (max-width: 768px), (orientation: portrait) {
+	body {
+		display: initial;
+	}
+	.sidebar {
+		width: 100%;
+		text-align: center;
+	}
+	.topnav ul {
+		border-top: .1em solid #ffe2f7;
+		padding: 1em;
+	}
+	.topnav ul li {
+		border-top: none;
+		display: inline;
+		line-height: 1.5em;
+		padding: 0;
+	}
+	.topnav ul li:not(:last-child):after {
+		content: ' - '
+	}
+	.avatar {
+		border-radius: 100%;
+		display: block;
+		margin: 0 auto;
+		padding: 10px;
+		height: 4em;
+		width: 4em;
+	}
+	.sidebar h1,
+	.sidebar .subheader {
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+	.sidebar .subheader:before {
+		content: '/ '
+	}
+}
+hr {
+	border-width: .2em 0 0;
+	border-style: dashed;
+	border-color: #2a0217;
+	max-width: 3em;
+}
+
+main {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: .1em solid #c8ccd1;
+	display: inline-block;
+	padding: 1em;
+}
+
+main h1{
+    color: #09f;
+}
+
+main header {
+    border: 1px solid #fff;
+}
+main p {
+	hyphens: auto;
+	text-align: justify;
+	text-indent: 1em;
+}
+main pre {
+	text-indent: 0;
+	white-space: pre-wrap;
+}
+main li {
+	margin-bottom: 0.2em;
+}
+main li > p:first-child {
+	margin-top: 0;
+	text-indent: 0;
+}
+blockquote {
+	color: #832917;
+	border-left: .2em solid;
+	margin: 1em 0;
+	padding-left: 2em;
+}
+dt {
+	font-weight: bold;
+}
+summary, main a {
+	color: #09f;
+	text-decoration: none;
+}
+summary:hover, main a:hover {
+	color: gray;
+	text-decoration: none;
+}
+kbd {
+	quotes: "`" "`";
+}
+kbd::before {
+	content: open-quote;
+}
+kbd::after {
+	content: close-quote;
+}
+.sidebar a:not(.nolink) {
+    font-size: 17px;
+	color: #000;
+	text-decoration: none;
+}
+.nolink,
+.sidebar a:hover {
+	color: #09f;
+	text-decoration: none;
+}
+summary {
+	cursor: pointer;
+	display: block;
+}
+
+table {
+	border: .1em solid #d178ed;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table tr {
+	border: .1em solid #d178ed;
+}
+table tr:nth-child(2n+1) {
+	background-color: #e7e2ff;
+}
+table th, table td {
+	padding: .1em .3em;
+}
+table th {
+	background-color: #d178ed;
+}
+table ol,
+table ul {
+	padding-left: 1em;
+}
+.cloudflare-warning {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 0;
+	height: 1em;
+	width: 2.211276798em;
+}
+.cloudflare-warning::before {
+	background-image: url('/cloudflare-warning.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: '';
+	display: inline-block;
+	height: 1em;
+	width: 2.211276798em;
+}
+.altnet-permalinks {
+	font-size: smaller;
+	opacity: .5;
+}
+
+.fa-info-circle{
+    color: #09f;
+    font-size: 15px;
+    margin: 4px;
+}
+
+.fa-paper-plane{
+    color: #09f;
+    font-size: 15px;
+    margin: 4px;
+}
+
+.fa-wallet{
+    color: #09f;
+    font-size: 15px;
+    margin: 4px;
+}
+
+.fa-folder-open{
+    color: #09f;
+    font-size: 15px;
+    margin: 4px;
+}
+
+.fa-exclamation-triangle{
+    margin-left: 45%;
+    font-size: 50px;
+    color: gray;
+}

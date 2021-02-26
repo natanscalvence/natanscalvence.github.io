@@ -1,0 +1,9 @@
+User-agent: curl
+User-agent: wget
+Disallow: 
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: *
+Disallow: /files/
